@@ -727,7 +727,7 @@ abstract class _SubSwiper extends StatefulWidget {
     if (value < 0) {
       value += itemCount;
     }
-    controller.move(value);
+    controller.move(value, animation: true);
     return value;
   }
 }
